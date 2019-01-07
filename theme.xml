@@ -1,0 +1,391 @@
+<!--
+theme name:		Pandoras
+version:		1.0
+author:         By Mr XBlocks and Will Allen
+-->
+
+<theme>
+    <formatVersion>4</formatVersion>
+
+	<view name="system">
+	
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/bg.png</path>
+		</image>
+		<image name="bg" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art2/${system.theme}.png</path>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>ffffff</textColor>
+			<iconColor>ffffff</iconColor>
+			<pos>1 1</pos>
+		</helpsystem>	
+
+
+		<image name="logo">
+			<path>./art/${system.theme}.png</path>
+		</image>
+		
+				
+	    <text name="systemInfo">
+         <pos>0.002 0.897</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>000000</color>
+         <fontPath>./assets/wii.ttf</fontPath>
+	     <fontSize>0.02</fontSize>
+      </text>
+	  
+         <text name="system_description" extra="true">
+            <pos>0.390 0.650</pos>
+            <color>ffffff</color>
+            <fontPath>./assets/wii.ttf</fontPath>
+            <fontSize>0.030</fontSize>
+            <size>0.250 0.330</size>
+            <alignment>left</alignment>
+            <lineSpacing>1.0</lineSpacing>
+		  </text>
+		
+	</view>
+
+	<view name="basic, detailed, video">
+		
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>2f2f2f</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.028</fontSize>
+		</text>
+
+		<text name="md_developer, md_genre, md_players, md_playcount, md_releasedate">
+			<color>2f2f2f</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.028</fontSize>
+		</text>
+
+		<helpsystem name="help">
+			<textColor>ffffffff</textColor>
+			<iconColor>ffffffff</iconColor>
+			<pos>1 1</pos>
+		</helpsystem>
+		
+		<image name="logo">
+			<color>00000000</color>
+			<path>./assets/box.png</path>
+			<pos>1 1</pos>
+		</image>
+		
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/systembg.png</path>
+		</image>
+
+<!-------------Select Game List title------------------>
+		<text name="system_name_1" extra="true">
+		    <text>${system.fullName}</text>
+			<forceUppercase>0</forceUppercase>
+			<size>0.500 0.120</size>
+			<pos>0.390 0.020</pos>
+			<color>ff0000</color>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.06</fontSize>
+			<alignment>left</alignment>
+			<zIndex>32</zIndex>
+		</text>
+
+<!-------------Select Game List title shadow 2------------------>		
+		<text name="system_name_2" extra="true">
+			<text>${system.fullName}</text>
+			<forceUppercase>0</forceUppercase>
+			<size>0.500 0.120</size>
+			<pos>0.393 0.020</pos>
+			<color>b0b0b0</color>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.06</fontSize>
+			<alignment>left</alignment>
+			<zIndex>31</zIndex>
+		</text>
+		
+	</view>
+
+	<view name="basic">
+
+		<image name="background">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/systembg.png</path>
+		</image>
+		
+	</view>
+	
+<!------Default Game Select Screen where no game has pics and not setup----->
+	<view name="basic">
+
+		<image name="background">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/systembg.png</path>
+		</image>
+		
+				<image name="bg" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art2/${system.theme}.png</path>
+		</image>
+		
+		         <text name="system_description" extra="true">
+            <pos>0.390 0.660</pos>
+            <color>ffffff</color>
+            <fontPath>./assets/wii.ttf</fontPath>
+            <fontSize>0.030</fontSize>
+            <size>0.250 0.330</size>
+            <alignment>left</alignment>
+            <lineSpacing>1.0</lineSpacing>
+		  </text>
+		  
+		<textlist name="gamelist">
+			<selectedColor>ffd800</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>7f7f7f</secondaryColor>
+			<selectorColor>ff0000</selectorColor>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.039</fontSize>
+			<pos>0.025 0.250</pos>
+			<size>0.305 0.600</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.03</horizontalMargin>
+			<lineSpacing>02.</lineSpacing>
+			<scrollSound>./assets/Move.wav</scrollSound>
+			<selectorImagePath>./art/selectorbar0.png</selectorImagePath>
+			<zIndex>51</zIndex>
+		</textlist>	
+		
+
+	</view>	
+<!------- Default Game Marquee ----------->
+	<view name="detailed">
+		
+                <image name="md_marquee">
+			<origin>0.5 0.5</origin>
+			<pos>0.850 0.800</pos>
+			<maxSize>0.200 0.145</maxSize>
+	  </image>
+		<image name="md_image">
+			<pos>0.808 0.374</pos>
+			<maxSize>0.277 0.315</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+	
+	</view>
+	
+	<view name="detailed, video">	
+		
+		
+		<image name="background">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/systembg.png</path>
+		</image>
+	
+
+<!-------------PLAYERS------------------->		
+		<text name="md_lbl_players">
+			<pos>0.080 0.870</pos>
+			<color>000000</color>
+            <fontSize>0.06</fontSize>
+                </text>
+		
+		<text name="md_players">
+			<pos>0.210 0.905</pos>
+			<color>ffffff</color>
+			<size>0.2 0.015</size>
+			<alignment>left</alignment>
+		    <fontSize>0.080</fontSize>
+			<zIndex>31</zIndex>
+            </text>
+			
+<!-------------GENRE--------------------->		
+		<text name="md_lbl_genre">
+			<pos>1 1</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+		
+		<text name="md_genre">
+			<pos>1 1</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+<!-------------DEVELOPER----------------->		
+		<text name="md_lbl_developer">
+			<pos>1 1</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+		
+		<text name="md_developer">
+			<pos>1 1</pos>
+			<size>0.2 0.028</size>
+		        <fontSize>0.04</fontSize>
+                </text>
+<!-------------RELEASE------------------->		
+		<datetime name="md_releasedate">
+			<color>2f2f2f</color>
+			<pos>1 1</pos>
+                        <fontSize>0.04</fontSize>
+		</datetime>
+		
+		<text name="md_lbl_releasedate">
+			<color>2f2f2f</color>
+			<pos>1 1</pos>
+	                <fontSize>0.04</fontSize>	
+                </text>
+<!-------------DESCRIPTION--------------->		
+		<text name="md_description">
+			<color>ffffff</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<pos>0.390 0.740</pos>
+			<size>0.350 0.161</size>		
+			</text>
+<!-------------GAMELIST------------------>		
+		<textlist name="gamelist">
+			<selectedColor>ffd800</selectedColor>
+			<primaryColor>898989</primaryColor>
+			<secondaryColor>e70c32</secondaryColor>
+			<selectorColor>00ccff</selectorColor>
+			<fontPath>./assets/wii.ttf</fontPath>
+			<fontSize>0.039</fontSize>
+			<pos>0.025 0.250</pos>
+			<size>0.305 0.600</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.03</horizontalMargin>
+			<lineSpacing>02.</lineSpacing>
+			<scrollSound>./assets/Move.wav</scrollSound>
+			<selectorImagePath>./art/selector_bar.png</selectorImagePath>
+			<zIndex>50</zIndex>
+		</textlist>		
+		
+<!-------------PLAYCOUNT----------------->
+		<text name="md_lbl_playcount">
+		    <color>ffae00</color>
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_playcount">
+		    <color>00ccff</color>
+			<pos>1 1</pos>
+		</text>
+<!-------------LAST PLAYED--------------->		
+		<text name="md_lbl_lastplayed">
+		    <color>000000</color>
+			<pos>1 1</pos>
+		</text>
+		
+		<datetime name="md_lastplayed">
+		    <color>000000</color>
+			<pos>1 1</pos>
+		</datetime>
+<!-------------PUBLISHER----------------->		
+		<text name="md_lbl_publisher">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_publsher">
+			<pos>1 1</pos>
+		</text>
+<!-------------RATINGS------------------->
+		<text name="md_lbl_rating">
+			<pos>1 1</pos>
+		</text>
+		
+		<rating name="md_rating">
+			<pos>0.800 0.540</pos>
+			<size>0.280 0.044</size>
+			<filledPath>./assets/1.png</filledPath>
+			<unfilledPath>./assets/0.png</unfilledPath>
+		</rating>
+</view>
+	
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>vertical</type>
+        <pos>0.001 0.260</pos>
+		<size>0.350 0.540</size>
+        <logoScale>1.1</logoScale>
+        <logoSize>0.2 02</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>5</maxLogoCount>
+		<zIndex>42</zIndex> 
+      </carousel>
+	  
+	  		<image name="carousel_bar_background" extra="true">
+			<path>./art/ </path>
+			<origin>0.5 0</origin>
+		</image>	
+	  
+	  		<image name="carousel_bar_outline" extra="true">
+			<pos>0.450 0.240</pos>
+			<path>./art/ </path>
+			<origin>0.5 0</origin>
+		</image>	
+<!-------------Main Screen show how manny game ------------------->	
+    <text name="systemInfo">
+      <backgroundColor>00000000</backgroundColor>
+	  <color>000000</color>
+	  <pos>0.390 0.060</pos>
+	  <size>0.720 0.052</size>
+      <fontPath>./assets/wii.ttf</fontPath>
+	  <alignment>left</alignment>
+	  <lineSpacing>2.3</lineSpacing>
+      <fontSize>0.080</fontSize>
+	  <zIndex>33</zIndex>
+    </text>
+		
+  </view>
+
+ </feature>
+   <!--Here is where you put videos to show and game marquee setting--> 
+ <view name="video">
+		
+	  <image name="md_marquee">
+			<origin>0.5 0.5</origin>
+			<pos>0.850 0.800</pos>
+			<maxSize>0.200 0.145</maxSize>
+	  </image>
+	  			<image name="md_image">
+			<pos>0.504 0.374</pos>
+			<maxSize>0.277 0.365</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+	  
+	  <video name="md_video">
+		    <pos>0.660 0.203</pos>
+			<size>0.305 0.318</size>
+			<origin>0 0</origin>
+			<delay>0</delay>
+            <default>./art/static.mp4</default>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+		</video>
+		
+	</view> 
+	
+	
+</theme>
