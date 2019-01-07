@@ -34,7 +34,13 @@ author:         By Mr XBlocks and Will Allen
 		<image name="logo">
 			<path>./art/${system.theme}.png</path>
 		</image>
-		
+				  	    <text name="logoText" extra="true">
+		    <lineSpacing>02</lineSpacing>
+		  <fontPath>./assets/Bp12228.ttf</fontPath>
+		  <forceUppercase>1</forceUppercase>
+			<fontSize>0.050</fontSize>
+			<color>d5d5d5</color>
+		</text>
 				
 	    <text name="systemInfo">
          <pos>0.002 0.897</pos>
